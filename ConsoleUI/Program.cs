@@ -5,15 +5,12 @@ using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 
 
-//Car car = new Car{ BrandId=1, ColorId=4, CarName="Test Car 2", DailyPrice=250, ModelYear=2021, Description="Test description 2."  };
+//Car car = new Car{ BrandId=2, ColorId=2, CarName="Turhan's Car", DailyPrice=950, ModelYear=2016, Description="For family travelings!"  };
 
 //CarManager carManager = new CarManager(new EfCarDal());
 
 //AddTest(car, carManager);
-if(5 == 6)
-{
 
-}
 static void AddTest(Car car, CarManager carManager)
 {
     try
@@ -29,7 +26,7 @@ static void AddTest(Car car, CarManager carManager)
 
 static void GetAllTest(CarManager carManager)
 {
-    carManager.GetAll().ForEach(car =>
+    carManager.GetAll().Data.ForEach(car =>
     {
         Console.WriteLine(car.CarName);
     });
