@@ -15,5 +15,7 @@ namespace Business.Constants
         public static string EntityNameAndPriceInvalid = "Invalid entity name and price!";
         public static string EntityDoesntExists = "Entity doesn't exists!";
         public static string EntitesListed = "Entities listed successfully!";
+
+        public static string CarAlreadyInUse = "Car already in use";
     }
 }
